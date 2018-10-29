@@ -206,7 +206,7 @@
     margin: auto;
     position: relative;
     overflow: hidden;
-    display: none;
+
 
 
 
@@ -304,7 +304,7 @@
 
 @keyframes surmoving {
     0% {
-        transform: rotate(0deg) translate(2vw);
+        transform: translate(2vw);
     }
 
     25% {
@@ -329,3 +329,23 @@
 
 
 }
+
+
+
+
+.titelskaerm {
+    animation-name: titelskaerm;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes titelskaerm {
+    from {
+        transform: translate(10vw));
+    }
+
+    to {
+        transform: translate(100vw);
+    }
