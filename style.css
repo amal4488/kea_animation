@@ -1,0 +1,253 @@
+#screen {
+    background-image: url(baggrund.svg);
+    background-size: cover;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#hund_glad {
+    background-image: url("karakter.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 12vw;
+    height: 16vw;
+    position: absolute;
+    left: 34vw;
+    top: 19vw;
+
+}
+
+#hund_sur {
+    background-image: url("karakter%20sur.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 12vw;
+    height: 16vw;
+    left: 34vw;
+    top: 19vw;
+    position: absolute;
+    display: none;
+
+
+
+
+}
+
+
+#like1 {
+    background-image: url("Like%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 13vw;
+    top: 19vw;
+
+}
+
+#like2 {
+    background-image: url("Like%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 30vw;
+    top: 21vw;
+
+
+}
+
+#like3 {
+    background-image: url("Like%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 50vw;
+    top: 10vw;
+
+
+}
+
+
+
+#like4 {
+    background-image: url("Like%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 62vw;
+    top: 30vw;
+
+
+}
+
+#like5 {
+    background-image: url("Like%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 18vw;
+    top: 5vw;
+
+
+
+
+
+}
+
+
+#sur1 {
+    background-image: url("Sur%20smiley%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 20vw;
+    top: 10vw;
+
+}
+
+
+#sur2 {
+    background-image: url("Sur%20smiley%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 25vw;
+    top: 18vw;
+
+
+}
+
+#sur3 {
+    background-image: url("Sur%20smiley%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 55vw;
+    top: 24vw;
+
+
+}
+
+#sur4 {
+    background-image: url("Sur%20smiley%20ikon.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5vw;
+    height: 7vw;
+    position: absolute;
+    left: 35vw;
+    top: 10vw;
+}
+
+
+
+
+#points {
+    background-image: url(point.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10vw;
+    height: 4vw;
+    position: absolute;
+    top: 3vw;
+    left: 1vw;
+
+
+}
+
+#liv {
+    background-image: url(liv.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10vw;
+    height: 4vw;
+    position: absolute;
+    top: 7vw;
+    left: 1vw;
+}
+
+
+#time {
+    background-image: url(timer.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10vw;
+    height: 4vw;
+    position: absolute;
+    top: 11vw;
+    left: 1vw;
+
+}
+
+
+#start {
+    background-image: url(start%20skaerm.svg);
+    background-size: cover;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: none;
+
+
+
+}
+
+
+#settings {
+    background-image: url(settings.svg);
+    background-size: cover;
+    width: 40vw;
+    height 30vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+
+
+#gameover {
+    background-image: url(game%20over.svg);
+    background-size: cover;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: none;
+
+}
+
+#complete {
+    background-image: url(Win.svg);
+    background-size: cover;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: none;
+
+
+}
