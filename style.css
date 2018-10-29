@@ -255,7 +255,7 @@
 
 .like_moving {
     animation-name: moving;
-    animation-duration: 6s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     /*animation-direction: reverse;*/
@@ -267,24 +267,65 @@
 
 @keyframes moving {
     0% {
-        transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) translate(2vw);
+    }
+
+    25% {
+
+        transform: translate(-4vw, 5vw)
     }
 
     50% {
-        transform: rotate(180deg) scale(2);
+        transform: translate(6vw, -7vw);
+
+
+    }
+
+    75% {
+        transform: translate(8vw, -5vw;
+        )
     }
 
     100% {
-        transform: rotate(360deg) scale(1);
+        transform: translate(8vw);
     }
 
 }
 
+
 .sur_moving {
-    animation-name: moving;
+    animation-name: surmoving;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function:
+    animation-timing-function: linear;
+
+}
+
+
+@keyframes surmoving {
+    0% {
+        transform: rotate(0deg) translate(2vw);
+    }
+
+    25% {
+
+        transform: translate(-4vw, 5vw)
+    }
+
+    50% {
+        transform: translate(6vw, -7vw);
+
+
+    }
+
+    75% {
+        transform: translate(8vw, -5vw;
+        )
+    }
+
+    100% {
+        transform: translate(8vw);
+    }
 
 
 }
