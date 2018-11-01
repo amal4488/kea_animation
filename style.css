@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+}
+
+
+
+
 #screen {
     background-image: url(baggrund.svg);
     background-size: cover;
@@ -37,6 +44,10 @@
 }
 
 
+
+
+
+
 #like1 {
     background-image: url("Like%20ikon.svg");
     background-repeat: no-repeat;
@@ -45,7 +56,8 @@
     height: 7vw;
     position: absolute;
     left: 13vw;
-    top: 19vw;
+    /* cursor: crosshair;*/
+    animation-delay: 1.7s;
 
 }
 
@@ -57,7 +69,8 @@
     height: 7vw;
     position: absolute;
     left: 30vw;
-    top: 21vw;
+
+    animation-delay: 1.4s;
 
 
 }
@@ -70,7 +83,8 @@
     height: 7vw;
     position: absolute;
     left: 50vw;
-    top: 10vw;
+
+    animation-delay: 1s;
 
 
 }
@@ -85,7 +99,8 @@
     height: 7vw;
     position: absolute;
     left: 62vw;
-    top: 30vw;
+
+    animation-delay: 1.2s;
 
 
 }
@@ -98,12 +113,8 @@
     height: 7vw;
     position: absolute;
     left: 18vw;
-    top: 5vw;
 
-
-
-
-
+    animation-delay: .8s
 }
 
 
@@ -115,7 +126,7 @@
     height: 7vw;
     position: absolute;
     left: 20vw;
-    top: 10vw;
+    animation-delay: 1.4s;
 
 }
 
@@ -128,7 +139,7 @@
     height: 7vw;
     position: absolute;
     left: 25vw;
-    top: 18vw;
+    animation-delay: 1.8s;
 
 
 }
@@ -141,7 +152,7 @@
     height: 7vw;
     position: absolute;
     left: 55vw;
-    top: 24vw;
+    animation-delay: 1s;
 
 
 }
@@ -154,27 +165,66 @@
     height: 7vw;
     position: absolute;
     left: 35vw;
-    top: 10vw;
+    animation-delay: .4s;
 }
 
 
+.like {
+    position: absolute;
+    cursor: pointer;
+}
+
+.like_sprite {
+    width: 10vw;
+    height: 10vw;
+    background-image: url(coin.svg);
+    background-size: 100%;
+}
+
+.sur {
+    position: absolute;
+    cursor: pointer;
+}
+
+.sur_sprite {
+    width: 10vw;
+    height: 10vw;
+    background-image: url(coin.svg);
+    background-size: 100%;
+}
 
 
 #points {
-    background-image: url(point.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 10vw;
-    height: 4vw;
     position: absolute;
     top: 3vw;
     left: 1vw;
+    font-family: sans-serif;
+    display: flex;
+    font-size: 1rem;
 
+
+}
+
+
+#points .coin {
+    background-image: url(Artboard%2020.svg);
+    width: 10vw;
+    height: 4vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#points .antal {
+    /*  outline: 2px solid red;*/
+    font-feature-settings: tnum;
+    width: 6rem;
+    left: -3vw;
 
 }
 
 #liv {
-    background-image: url(liv.svg);
+    background-image: url(Artboard%2019.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 10vw;
@@ -182,6 +232,48 @@
     position: absolute;
     top: 7vw;
     left: 1vw;
+}
+
+#liv1 {
+
+    background-image: url(Artboard%2017.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1.8vw;
+    height: 6vw;
+    left: 1.1vw;
+    top: 0.5vw;
+
+
+}
+
+#liv2 {
+    background-image: url(Artboard%2017.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1.8vw;
+    height: 6vw;
+    left: 4vw;
+    top: 0.5vw;
+
+}
+
+
+#liv3 {
+    background-image: url(Artboard%2017.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    width: 1.8vw;
+    height: 6vw;
+    left: 7vw;
+    top: 0.5vw;
+
+
+
+
 }
 
 
@@ -198,19 +290,6 @@
 }
 
 
-#start {
-    background-image: url(start%20skaerm.svg);
-    background-size: cover;
-    width: 80vw;
-    height: 45vw;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-
-
-
-
-}
 
 
 #settings {
@@ -253,6 +332,52 @@
 }
 
 
+.paused {
+    animation-play-state: paused;
+}
+
+
+.falling {
+    animation-name: falling_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    /* sikr at vi altid er uden for skærmen, hvis animationen er delayet */
+    top: -10vw;
+}
+
+@keyframes falling_kf {
+    from {
+        top: -10vw;
+    }
+
+    to {
+        top: 60vw;
+    }
+}
+
+.dissappear {
+    animation-name: dissappear_kf;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.59, -0.56, .77, 1.34);
+    animation-fill-mode: forwards;
+}
+
+@keyframes dissappear_kf {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0);
+    }
+}
+
+
+/******** MOVING ANIMATION
+
 .like_moving {
     animation-name: moving;
     animation-duration: 2s;
@@ -260,7 +385,7 @@
     animation-timing-function: linear;
     /*animation-direction: reverse;*/
 
-
+/******** MOVING ANIMATION
 
 
 }
@@ -330,17 +455,102 @@
 
 }
 
+********/
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.pulse {
+    animation-name: pulse_kf;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
 
 
 
-.titelskaerm {
+#start {
+    background-image: url(Artboard%201%20copy.svg);
+    background-size: 100%;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+
+
+
+}
+
+
+
+#play {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 24vw;
+    background-image: url(play%20knap.svg);
+    background-size: 80%;
+    left: 33vw;
+    top: 15vw;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+#computer_ikon {
+    position: relative;
+    background-repeat: no-repeat;
+    width: 10vw;
+    height: 10vw;
+    background-image: url(computer%20ikon.svg);
+    background-size: 30%;
+    left: 38.6vw;
+    top: 36.5vw;
+
+}
+
+
+.hide {
+    visibility: hidden;
+}
+
+
+/**
+.show {
     animation-name: titelskaerm;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
 }
-
+**/
 @keyframes titelskaerm {
     from {
         transform: translate(10vw));

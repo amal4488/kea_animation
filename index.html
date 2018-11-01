@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Like Hunter</title>
+    <title>LIKE HUNTER</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,26 +18,59 @@
             <div id="game_elements">
                 <div id="hund_glad"></div>
                 <div id="hund_sur"></div>
-                <div id="like1" class="like_moving"></div>
-                <div id="like2" class="like_moving"></div>
-                <div id="like3" class="like_moving"></div>
-                <div id="like4" class="like_moving"></div>
-                <div id="like5" class="like_moving"></div>
-                <div id="sur1" class="sur_moving"></div>
-                <div id="sur2" class="sur_moving"></div>
-                <div id="sur3" class="sur_moving"></div>
-                <div id="sur4" class="sur_moving"></div>
+                <div id="like1" class="like">
+                    <div class="like_sprite"></div>
+                </div>
+                <div id="like2" class="like">
+                    <div class="like_sprite"></div>
+                </div>
+                <div id="like3" class="like">
+                    <div class="like_sprite"></div>
+                </div>
+                <div id="like4" class="like">
+                    <div class="like_sprite"></div>
+                </div>
+                <div id="like5" class="like">
+                    <div class="like_sprite"></div>
+                </div>
+                <div id="sur1" class="sur">
+                    <div class="sur_sprite"></div>
+                </div>
+                <div id="sur2" class="sur">
+                    <div class="sur_sprite"></div>
+                </div>
+                <div id="sur3" class="sur">
+                    <div class="sur_sprite"></div>
+                </div>
+                <div id="sur4" class="sur">
+                    <div class="sur_sprite"></div>
+
+                </div>
 
             </div>
 
             <div id="game_ui">
-                <div id="points"></div>
-                <div id="liv"></div>
+                <div id="points">
+                    <span class="coin"></span>
+                    <span class="antal">0</span>
+
+                </div>
+                <div id="liv">
+                    <div id="liv1" class="hund_liv"></div>
+                    <div id="liv2" class="hund_liv"></div>
+                    <div id="liv3" class="hund_liv"></div>
+
+
+
+                </div>
                 <div id="time"></div>
 
             </div>
         </div>
-        <div id="start" class="titelskaerm"></div>
+        <div id="start" class="hide">
+            <div id="play" class="pulse"></div>
+            <div id="computer_ikon" class="light"></div>
+        </div>
         <div id="settings"></div>
         <div id="gameover"></div>
         <div id="complete"></div>
@@ -52,7 +85,7 @@
 
 
 
-
+    <script src="script.js"></script>
 
 </body>
 
